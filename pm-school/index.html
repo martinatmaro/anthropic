@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<title>Maro PM School</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A two-week, 30-minutes-a-day product management course built around Maro for Schools and Secure Links.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#home" aria-label="Maro PM School home">
+      <span class="brand-mark" aria-hidden="true">PM</span>
+      <span class="brand-name">Maro PM School</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#home" data-nav="home">Course</a>
+      <a href="#playbook" data-nav="playbook">Playbook</a>
+      <a href="#faculty" data-nav="faculty">Faculty</a>
+    </nav>
+    <div class="stats" id="stats" aria-live="polite"></div>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="foot">
+  <p>Your progress and writing are saved in this browser. Use <a href="#playbook">Playbook</a> to copy everything out.</p>
+</footer>
+
+<script src="curriculum.js"></script>
+<script src="app.js"></script>
