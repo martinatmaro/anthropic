@@ -24,7 +24,7 @@ The two numbers that drive every lesson: **time to first screening** for a new s
 | Day | Lesson | Faculty | Assignment |
 |---|---|---|---|
 | 1 ✅ | The job is outcomes, not features | Nikita Bier, Shreyas Doshi | Maro product charter v0 |
-| 2 | Know the job your users hire Maro for (Jobs to Be Done) | Clayton Christensen, Kathy Sierra | Job map for every Maro user type |
+| 2 ✅ | Know the job your users hire Maro for (Jobs to Be Done) | Clayton Christensen, Bob Moesta, Kathy Sierra | Job map for every Maro user type |
 | 3 | Talk to users without fooling yourself | Rob Fitzpatrick, Teresa Torres | Counselor and parent interview guides |
 | 4 | Your support inbox is a product spec | Rahul Vohra, Paul Graham | Tag 50 tickets by root cause |
 | 5 | Measure it: activation, funnels, the aha moment | Lenny Rachitsky, Elena Verna | Maro metric tree |

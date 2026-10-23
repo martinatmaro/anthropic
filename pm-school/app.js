@@ -360,7 +360,7 @@
     C.days.forEach(function (d) { d.mentors.forEach(function (m) { (taught[m] = taught[m] || []).push(d); }); });
     var h = '<div class="wrap"><header class="lesson-head column" style="margin-left:0">' +
       '<span class="label">Faculty</span><h1>Who you’re learning from</h1>' +
-      '<p class="tagline">Fifteen people whose work shaped how good products get built. Each card links to the best place to start.</p></header>' +
+      '<p class="tagline">' + Object.keys(M).length + ' people whose work shaped how good products get built. Each card links to the best place to start.</p></header>' +
       '<div class="fac-grid">';
     Object.keys(M).forEach(function (k) {
       var m = M[k];

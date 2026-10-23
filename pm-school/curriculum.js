@@ -45,6 +45,12 @@ window.MENTORS = {
     lens: "People hire products to make progress. Find the job, not the demographic.",
     link: "https://hbr.org/2016/09/know-your-customers-jobs-to-be-done"
   },
+  moesta: {
+    name: "Bob Moesta",
+    role: "Co-creator of Jobs to Be Done with Clayton Christensen. CEO of The Re-Wired Group.",
+    lens: "Demand starts in a struggling moment. People switch when push and pull beat anxiety and habit.",
+    link: "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-jtbd-bob-moesta"
+  },
   krug: {
     name: "Steve Krug",
     role: "Author of Don't Make Me Think, the most-read usability book.",
@@ -281,7 +287,7 @@ window.CURRICULUM = {
       id: "day2", n: 2, week: 1,
       title: "Know the job your users hire Maro for",
       tagline: "Jobs to Be Done, and the six people who touch every screening.",
-      mentors: ["christensen", "sierra"],
+      mentors: ["christensen", "moesta", "sierra"],
       goals: ["Explain Jobs to Be Done with the milkshake story", "Write a job statement for each Maro user type", "Spot a feature request that hides a different job"],
       outline: ["Read: Jobs to Be Done in 7 minutes", "Watch: Christensen's milkshake story", "Case: the Maro cast (district admin, counselor, teacher, parent, student, clinician)", "Quiz", "Write: job map for every Maro user"],
       resources: [
@@ -289,7 +295,235 @@ window.CURRICULUM = {
         { label: "The milkshake story (starts 1:07)", by: "Clayton Christensen, Startup Grind", url: "https://www.youtube.com/watch?v=Zn6-KksdOgE&t=67s" },
         { label: "Intercom on Jobs to Be Done (free book)", by: "Intercom", url: "https://www.intercom.com/resources/books/intercom-jobs-to-be-done" }
       ],
-      assignment: "Job map: one job statement per Maro user type, plus their biggest anxiety"
+      assignment: "Job map: one job statement per Maro user type, plus their biggest anxiety",
+      lesson: {
+        bierRule: "“Look for existing user behaviors that are being done in a very inefficient way.”",
+        bierSource: "Nikita Bier on latent demand, Lenny's Podcast show notes",
+        bierLink: "https://www.lennysnewsletter.com/p/how-to-consistently-go-viral-nikita-bier",
+        segments: [
+          {
+            kind: "brief", minutes: 1, title: "Today's mission",
+            html: `
+<p>Yesterday you listed everyone who touches Maro. Today you find out what each of them is actually trying to get done, and what scares them about it.</p>
+<p>This matters for your brief because most support tickets are not about bugs. They are a person stuck between what they were trying to do and what the screen asked of them. If you know the job, you can see the gap.</p>`
+          },
+          {
+            kind: "read", minutes: 6, title: "Jobs to Be Done in six minutes",
+            html: `
+<h3>People hire products to make progress</h3>
+<p>Clayton Christensen's idea is simple: nobody buys a product for its own sake. They <em>hire</em> it to make progress in a specific situation, and they <em>fire</em> it when something else does the job better. The unit of analysis is the job, not the customer's age, title or school size.</p>
+
+<h3>The job has three layers</h3>
+<p>Every job has a practical side and two human sides. For a school counselor running screening season:</p>
+<ul>
+  <li><strong>Functional:</strong> get consent and screenings done for 600 students before the window closes.</li>
+  <li><strong>Emotional:</strong> not feel overwhelmed, and feel sure no at-risk kid slips through.</li>
+  <li><strong>Social:</strong> look competent to the principal and the district when the numbers come in.</li>
+</ul>
+<p>Most products only design for the first layer. Most support calls come from the other two.</p>
+
+<h3>Write jobs as job stories</h3>
+<p>Intercom's product team replaced personas with a three-part format they called the job story:</p>
+<div class="compare">
+  <div><span class="tag tag-out">Persona</span><p>Sarah, 42, school counselor, 8 years experience, likes clear dashboards.</p></div>
+  <div><span class="tag tag-in">Job story</span><p><strong>When</strong> screening day is two days away and a third of consents are missing, <strong>I want to</strong> see which families haven't answered, <strong>so I can</strong> follow up before the window closes.</p></div>
+</div>
+<p>The situation (“when…”) does the heavy lifting. It tells you what the screen should show <em>at that moment</em>, which a persona never does.</p>
+
+<h3>Your real competition</h3>
+<p>Maro's competitor in a school is rarely another screening company. It is the paper packet in a backpack, a Google Form, a spreadsheet the counselor already knows, or doing nothing at all. Your onboarding has to beat the habit, not just look better than a rival.</p>
+
+<h3>The four forces of switching</h3>
+<p>Bob Moesta, who developed the theory with Christensen, describes four forces acting on anyone who is deciding whether to change how they do something:</p>
+<div class="forces">
+  <div class="force force-go"><strong>Push</strong><span>of the current situation. “Chasing paper consent forms takes me three weeks.”</span></div>
+  <div class="force force-go"><strong>Pull</strong><span>of the new solution. “Parents could consent from their phone.”</span></div>
+  <div class="force force-stop"><strong>Anxiety</strong><span>about the new thing. “What if parents think the link is a scam? What if a result flags suicide risk and I miss it?”</span></div>
+  <div class="force force-stop"><strong>Habit</strong><span>of the present. “Our paper process works well enough, and I know where everything is.”</span></div>
+</div>
+<p>People switch only when push and pull beat anxiety and habit. Here is the useful part for you: <span class="mark">reducing anxiety and habit is usually cheaper than adding pull.</span> A clear sentence about who sees the results can do more than a new feature.</p>
+
+<h3>Nobody wants to be good at Maro</h3>
+<p>Kathy Sierra's rule: users don't want to be good at your tool, they want to be good at what the tool lets them do. A counselor wants to be great at keeping students safe. Every screen and help article should make them better at <em>that</em>. Compare “How to get every consent back before screening day” with “Using the Consent Settings page”. Same article, different job.</p>
+
+<h3>Requests are guesses at solutions</h3>
+<p>When someone asks for a feature, they are proposing their own fix for a job. Your work is to find the job and then choose the best fix, which may be smaller, different, or already there but hidden.</p>`
+          },
+          {
+            kind: "watch", minutes: 4, title: "Clayton Christensen: the milkshake story",
+            source: "Startup Grind",
+            url: "https://www.youtube.com/watch?v=Zn6-KksdOgE&t=67s",
+            range: "1:07 → about 5:00",
+            html: `
+<p>The most famous four minutes in product thinking. A fast food chain tries to sell more milkshakes by asking customers how to improve them. Sales don't move. Then a researcher asks a different question: what job is the milkshake being hired to do?</p>
+<p>Listen for:</p>
+<ul>
+  <li>When are most milkshakes bought, and by whom?</li>
+  <li>What is the milkshake really competing against?</li>
+  <li>Why does the same customer hire it for a different job in the afternoon?</li>
+</ul>`,
+            notesPrompt: "What's Maro's “morning commute”? Name one situation where a school hires Maro for a job you hadn't thought about."
+          },
+          {
+            kind: "watch", minutes: 6, title: "Bob Moesta: struggling moments create demand",
+            source: "Lenny's Podcast, Aug 2023",
+            url: "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-jtbd-bob-moesta",
+            range: "04:04 → 09:51",
+            html: `
+<p>Open the episode page and play from <strong>04:04</strong> (“A simple explanation of the Jobs To Be Done framework”) through <strong>09:51</strong>, which covers “Struggling moments and demand”.</p>
+<p>Moesta's key claim is that demand doesn't come from your product. It comes from a moment when someone is struggling. Listen for how he describes that moment, then think about where Maro's users struggle: the week before screening, the first login, the text message a parent didn't expect.</p>
+<p class="muted">Bookmark 14:46 for later. It's how Autobooks improved its buying process and 4x'ed conversion, which you'll want on Day 9.</p>`,
+            notesPrompt: "One struggling moment you've seen a Maro user in, described as specifically as you can."
+          },
+          {
+            kind: "case", minutes: 5, title: "Case study: the Maro cast",
+            html: `
+<p>Here is a first draft of the six main people around a Maro screening, each with a job story, their biggest anxiety, and what they would use without Maro. <strong>These are hypotheses.</strong> You know the product better than this page does. Correct them in today's assignment, and test them in real interviews on Day 3.</p>
+<div class="cast">
+  <article class="cast-card">
+    <span class="label">District leader</span>
+    <h4>Student services or mental health director</h4>
+    <p><strong>When</strong> the board or state asks what we're doing about student mental health, <strong>I want to</strong> show screening coverage and follow-up across every school, <strong>so I can</strong> defend the program and its budget.</p>
+    <p class="cast-anx"><span>Anxiety</span>A flagged student who never got follow-up, and the liability that comes with it.</p>
+    <p class="cast-alt"><span>Without Maro</span>Each school does its own thing, or nothing.</p>
+  </article>
+  <article class="cast-card">
+    <span class="label">Daily user</span>
+    <h4>School counselor</h4>
+    <p><strong>When</strong> screening season lands on top of my caseload, <strong>I want to</strong> get consents and screenings done without chasing paper, <strong>so I can</strong> spend my time with the students who need me.</p>
+    <p class="cast-anx"><span>Anxiety</span>More flagged results than they have hours to act on. A messy rollout that makes them look bad.</p>
+    <p class="cast-alt"><span>Without Maro</span>Paper forms in backpacks, Google Forms, a spreadsheet.</p>
+  </article>
+  <article class="cast-card">
+    <span class="label">Helper</span>
+    <h4>Teacher</h4>
+    <p><strong>When</strong> I'm asked to give up class time for screening, <strong>I want</strong> it to take minutes and just work, <strong>so I can</strong> get back to teaching.</p>
+    <p class="cast-anx"><span>Anxiety</span>The tech failing in front of 28 students.</p>
+    <p class="cast-alt"><span>Without Maro</span>Handing out paper, or being left out entirely.</p>
+  </article>
+  <article class="cast-card">
+    <span class="label">Gatekeeper</span>
+    <h4>Parent or guardian</h4>
+    <p><strong>When</strong> a text from school asks me to consent to a mental health screening, <strong>I want to</strong> understand what it is and that it's safe, <strong>so I can</strong> decide quickly and get on with my day.</p>
+    <p class="cast-anx"><span>Anxiety</span>Is this link a scam? Who sees the answers? Will this go on my child's record?</p>
+    <p class="cast-alt"><span>Without Maro</span>A paper form, or ignoring the message.</p>
+  </article>
+  <article class="cast-card">
+    <span class="label">The reason it exists</span>
+    <h4>Student</h4>
+    <p><strong>When</strong> a screen at school asks how I've been feeling, <strong>I want to</strong> feel safe being honest, <strong>so I can</strong> get help without being embarrassed.</p>
+    <p class="cast-anx"><span>Anxiety</span>Classmates seeing the screen. Not knowing who reads the answers.</p>
+    <p class="cast-alt"><span>Without Maro</span>Nobody asks.</p>
+  </article>
+  <article class="cast-card">
+    <span class="label">Next step</span>
+    <h4>Clinician or care partner</h4>
+    <p><strong>When</strong> a referral comes in, <strong>I want</strong> the context and the family's contact details in one place, <strong>so I can</strong> book a first appointment fast.</p>
+    <p class="cast-anx"><span>Anxiety</span>Incomplete referrals and families who never pick up.</p>
+    <p class="cast-alt"><span>Without Maro</span>Faxes, phone tag, an email chain.</p>
+  </article>
+</div>
+
+<div class="maro-lens">
+  <p class="lens-label">Decode a request</p>
+  <p><strong>The request:</strong> “Can you add a button to resend the consent link to every parent who hasn't answered?”</p>
+  <p><strong>The job:</strong> when screening day is close and consent is low, the counselor wants to reach the threshold without spending an afternoon on follow-up.</p>
+  <p><strong>Better fixes to consider:</strong> automatic reminders on a schedule the counselor sets once. A consent-rate progress bar with a countdown to screening day. Reminders that go out in the family's language. Any of these might remove the request, and the tickets behind it, for every school at once.</p>
+</div>`,
+            prompt: "Which of the six cards is most wrong for Maro, and what's the real job? (Or: who is missing from the cast?)"
+          },
+          {
+            kind: "quiz", minutes: 3, title: "Check yourself",
+            questions: [
+              {
+                q: "In the milkshake story, what were morning commuters mostly hiring the milkshake to do?",
+                options: [
+                  "Get a cheap, sweet treat",
+                  "Make a long, boring drive more interesting and stay full until lunch",
+                  "Replace a full breakfast with something healthier",
+                  "Reward themselves before work"
+                ],
+                answer: 1,
+                why: "The milkshake competed with bananas, bagels and boredom, not with other milkshakes. Improving the flavor did nothing because flavor wasn't the job."
+              },
+              {
+                q: "Which of these is a well-formed job story?",
+                options: [
+                  "As a counselor, I want a consent dashboard.",
+                  "Counselors are busy and need better tools.",
+                  "When screening day is two days away and a third of consents are missing, I want to see which families haven't answered, so I can follow up before the window closes.",
+                  "Build a page listing parents with missing consent."
+                ],
+                answer: 2,
+                why: "A job story starts with the situation, names the motivation, and ends with the outcome. The first option is a user story that names a solution. The last is a task."
+              },
+              {
+                q: "For a school counselor, what is usually Maro's biggest competitor?",
+                options: [
+                  "Another mental health screening company",
+                  "The paper forms, Google Forms or spreadsheets they already use, or doing nothing",
+                  "The district's student information system",
+                  "Counseling apps aimed at students"
+                ],
+                answer: 1,
+                why: "Habit and nonconsumption are the real competition. Onboarding has to feel easier than the process they already know, starting on day one."
+              },
+              {
+                q: "A parent writes to support: “Is this link real, or is it a scam?” Which of the four forces is that?",
+                options: ["Push", "Pull", "Anxiety", "Habit"],
+                answer: 2,
+                why: "It's anxiety about the new thing. A school logo, the counselor's name and a sentence on who sees the answers can lower it without adding any features."
+              },
+              {
+                q: "Using Kathy Sierra's principle, which help article title is better?",
+                options: [
+                  "Using the Consent Settings page",
+                  "How to get every consent back before screening day",
+                  "Consent module: overview and configuration",
+                  "Consent FAQ"
+                ],
+                answer: 1,
+                why: "It names the job the counselor is trying to do, not the part of the tool. People search for their goal, not your menu names."
+              },
+              {
+                q: "A counselor asks for a “resend to everyone” button. What's the best first move?",
+                options: [
+                  "Build it; it's small",
+                  "Ask what was happening when they needed it, and what they did instead",
+                  "Tell them the feature already exists in settings",
+                  "Add it to a feature-request vote board"
+                ],
+                answer: 1,
+                why: "Find the situation and the job first. You may find a fix that helps every school, such as automatic reminders, instead of a button only power users find."
+              }
+            ]
+          },
+          {
+            kind: "write", minutes: 7, title: "Assignment: the Maro job map",
+            html: `<p>Rewrite the cast in your own words, using the job story format. Fix what the case got wrong. Keep each answer to two or three lines: <em>When… I want to… so I can…</em> then <em>Anxiety:</em>.</p>`,
+            fields: [
+              { id: "job-district", label: "District leader", hint: "When… I want to… so I can… / Anxiety:", rows: 3 },
+              { id: "job-counselor", label: "School counselor", hint: "When… I want to… so I can… / Anxiety:", rows: 3 },
+              { id: "job-teacher", label: "Teacher", hint: "When… I want to… so I can… / Anxiety:", rows: 3 },
+              { id: "job-parent", label: "Parent or guardian (Secure Links)", hint: "When… I want to… so I can… / Anxiety:", rows: 3 },
+              { id: "job-student", label: "Student", hint: "When… I want to… so I can… / Anxiety:", rows: 3 },
+              { id: "job-clinician", label: "Clinician or care partner", hint: "When… I want to… so I can… / Anxiety:", rows: 3 },
+              { id: "decode", label: "Decode one real request you've heard at Maro: the request, the job behind it, and a better fix.", hint: "Check the support inbox or ask the person who runs onboarding calls.", rows: 4 },
+              { id: "anxiety-ticket", label: "Which anxiety above do you think creates the most support contacts? What's the cheapest way to lower it?", hint: "On Day 4 you'll check this guess against real tickets.", rows: 3 }
+            ]
+          },
+          {
+            kind: "bonus", minutes: 0, title: "Go further (optional)",
+            links: [
+              { label: "Know Your Customers' Jobs to Be Done", by: "Clayton Christensen et al., Harvard Business Review", url: "https://hbr.org/2016/09/know-your-customers-jobs-to-be-done", meta: "Read, 15 min. The original argument, with the milkshake and more cases." },
+              { label: "The ultimate guide to JTBD (full episode)", by: "Bob Moesta on Lenny's Podcast", url: "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-jtbd-bob-moesta", meta: "Listen, 1 hr. 30:07 is on why he doesn't use a discussion guide, useful before Day 3." },
+              { label: "How we accidentally invented job stories", by: "Paul Adams, Intercom", url: "https://www.intercom.com/blog/accidentally-invented-job-stories/", meta: "Read, 6 min. Where the format came from." },
+              { label: "Intercom on Jobs to Be Done", by: "Intercom (free book)", url: "https://www.intercom.com/resources/books/intercom-jobs-to-be-done", meta: "Read in parts. How a software team uses JTBD day to day." },
+              { label: "Jobs to Be Done theory", by: "Christensen Institute", url: "https://www.christenseninstitute.org/theory/jobs-to-be-done/", meta: "Read, 5 min. A short reference page." }
+            ]
+          }
+        ]
+      }
     },
     {
       id: "day3", n: 3, week: 1,

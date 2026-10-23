@@ -483,3 +483,17 @@ textarea {
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Day 2: four forces and the cast of users */
+.forces { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 10px; }
+.force { border-radius: 8px; padding: 12px; display: grid; gap: 4px; border: 1px solid var(--rule); }
+.force strong { font-family: var(--f-display); font-size: 1.05rem; }
+.force-go { border-top: 4px solid var(--ok); }
+.force-stop { border-top: 4px solid var(--bad); }
+.cast { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; }
+.cast-card { border: 1px solid var(--rule); border-radius: 8px; padding: 14px; display: grid; gap: 8px; align-content: start; background: var(--paper); }
+.cast-card h4 { font-size: 1.02rem; }
+.cast-card p { font-size: 0.95rem; }
+.cast-anx span, .cast-alt span { display: block; font: 600 0.68rem var(--f-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); }
+.cast-anx { border-left: 3px solid var(--bad); padding-left: 8px; }
+.cast-alt { border-left: 3px solid var(--rule-strong); padding-left: 8px; }
