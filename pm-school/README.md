@@ -25,8 +25,8 @@ The two numbers that drive every lesson: **time to first screening** for a new s
 |---|---|---|---|
 | 1 ✅ | The job is outcomes, not features | Nikita Bier, Shreyas Doshi | Maro product charter v0 |
 | 2 ✅ | Know the job your users hire Maro for (Jobs to Be Done) | Clayton Christensen, Bob Moesta, Kathy Sierra | Job map for every Maro user type |
-| 3 | Talk to users without fooling yourself | Rob Fitzpatrick, Teresa Torres | Counselor and parent interview guides |
-| 4 | Your support inbox is a product spec | Rahul Vohra, Paul Graham | Tag 50 tickets by root cause |
+| 3 ✅ | Talk to users without fooling yourself | Rob Fitzpatrick, Teresa Torres | Counselor and parent interview guides |
+| 4 ✅ | Your support inbox is a product spec | Rahul Vohra, Paul Graham, Nikita Bier | Tag 50 tickets by root cause |
 | 5 | Measure it: activation, funnels, the aha moment | Lenny Rachitsky, Elena Verna | Maro metric tree |
 | 6 | Choose: prioritization and saying no | Shreyas Doshi, Marty Cagan | Ranked top 10 with RICE + three "not now" replies |
 | 7 | Teardown day: onboarding, screen by screen | Nikita Bier | Full Maro onboarding teardown with tap count |

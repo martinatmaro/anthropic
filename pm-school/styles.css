@@ -497,3 +497,20 @@ textarea {
 .cast-anx span, .cast-alt span { display: block; font: 600 0.68rem var(--f-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); }
 .cast-anx { border-left: 3px solid var(--bad); padding-left: 8px; }
 .cast-alt { border-left: 3px solid var(--rule-strong); padding-left: 8px; }
+
+/* Day 3: question fixes and the opportunity tree */
+.fixes { display: grid; gap: 12px; }
+.fix { border: 1px solid var(--rule); border-radius: 8px; padding: 14px; display: grid; gap: 8px; background: var(--paper); }
+.fix span { display: block; font: 600 0.68rem var(--f-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); }
+.fix-bad { border-left: 3px solid var(--bad); padding-left: 10px; color: var(--ink-soft); }
+.fix-good { border-left: 3px solid var(--ok); padding-left: 10px; font-weight: 700; }
+.fix-why { font-size: 0.95rem; color: var(--ink-soft); }
+.tree, .tree ul { list-style: none; margin: 0; padding-left: 0; display: grid; gap: 8px; }
+.tree ul { padding-left: 18px; border-left: 2px solid var(--rule-strong); margin-top: 8px; }
+.tree li { min-width: 0; }
+
+/* Day 4: root-cause grid */
+.causes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 8px; }
+.causes > div { border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; display: grid; gap: 2px; }
+.causes strong { font-family: var(--f-display); }
+.causes span { font-size: 0.92rem; color: var(--ink-soft); }

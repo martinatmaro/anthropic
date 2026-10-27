@@ -543,13 +543,212 @@ window.CURRICULUM = {
         { label: "Teresa Torres on how to interview customers", by: "Lenny's Podcast", url: "https://www.lennysnewsletter.com/p/teresa-torres-on-how-to-interview" },
         { label: "Opportunity Solution Trees", by: "Teresa Torres", url: "https://www.producttalk.org/opportunity-solution-tree/" }
       ],
-      assignment: "Interview guides for a counselor and a parent, and a plan to book five calls this week"
+      assignment: "Interview guides for a counselor and a parent, and a plan to book five calls this week",
+      lesson: {
+        bierRule: "“If you actually sit behind someone and watch them use their phone, they actually switch between apps at a pretty high frequency. Every tap that you get, every single one is so scarce that you should be optimizing everything.”",
+        bierSource: "Nikita Bier on Lenny's Podcast, around 15 minutes in",
+        bierLink: "https://www.lennysnewsletter.com/p/how-to-consistently-go-viral-nikita-bier",
+        segments: [
+          {
+            kind: "brief", minutes: 1, title: "Today's mission",
+            html: `
+<p>On Day 2 you wrote six job stories. Most of them are guesses. Today you learn how to check them against reality without fooling yourself, and you write the two interview guides you'll use this week: one for a counselor, one for a parent who got a Secure Link.</p>
+<p>The goal by Friday: five real conversations on your calendar.</p>`
+          },
+          {
+            kind: "read", minutes: 6, title: "How to get the truth out of polite people",
+            html: `
+<h3>Why interviews usually lie</h3>
+<p>Ask a counselor “Would you use a feature that sends automatic consent reminders?” and they will say yes. They are being kind, it costs them nothing, and they are guessing about their own future. You learn nothing, and you feel great about it. That last part is the danger.</p>
+
+<h3>The Mom Test: three rules</h3>
+<p>Rob Fitzpatrick named his book after the idea that even your mom should not be able to lie to you if you ask the right questions. His rules:</p>
+<ol class="numbers">
+  <li><strong>Talk about their life, not your idea.</strong> Once you pitch, they start grading your idea instead of telling you how they work.</li>
+  <li><strong>Ask about specific things that already happened, not opinions or the future.</strong> “What did you do last time?” beats “What would you do?” every time.</li>
+  <li><strong>Talk less, listen more.</strong> If you're talking more than a third of the time, you're presenting, not interviewing.</li>
+</ol>
+
+<h3>Collect stories</h3>
+<p>Teresa Torres says you could run a whole interview with one question: <em>“Tell me about the last time you…”</em> Then keep the story moving: “Set the scene. What happened next? How come?” In her words, asking people what they <em>would</em> do or <em>think</em> is “all really unreliable. It's a garbage in, garbage out situation.” Behavior is the data.</p>
+<div class="compare">
+  <div><span class="tag tag-out">Opinion question</span><p>How easy is Maro's consent process for parents?</p></div>
+  <div><span class="tag tag-in">Story question</span><p>Tell me about the last time you sent consent links to families. Start from when you decided it was time.</p></div>
+</div>
+
+<h3>Interviewing in schools</h3>
+<ul>
+  <li><strong>Counselors are busy and kind.</strong> Ask for 20 minutes, not 60. Assume they will soften criticism, especially to the company their district pays. Ask what they did instead of how they feel.</li>
+  <li><strong>Watch, don't just ask.</strong> The best interview is a screen share of them doing the real task. Count where they hesitate.</li>
+  <li><strong>Reach parents through the school or the product.</strong> Ask counselors to introduce you, or add a short opt-in after a parent finishes the consent flow. Offer Spanish and other languages your families speak.</li>
+  <li><strong>Stay away from student data.</strong> Never ask about a specific child or their results. You are studying the process, not the people being screened. Don't interview students directly; that needs the school's and families' permission and a different setup.</li>
+</ul>
+
+<h3>Make it weekly, not a project</h3>
+<p>Torres's trick for recruiting is to ask people while you already have their attention. Inside the product: “Do you have 20 minutes to talk to us?” with a scheduling link. Through colleagues: give whoever runs onboarding and support a weekly “trigger”, such as “this week we want to talk to a counselor whose roster upload failed”, so they book the call for you.</p>
+
+<h3>Where the notes go</h3>
+<p>After each call, write down the moments of struggle you heard, in their words. Then put them on an <strong>opportunity solution tree</strong>: your outcome at the top, the needs and pain points (opportunities) underneath, and only then the solutions and the tests. You'll see one for Maro in the case study.</p>`
+          },
+          {
+            kind: "watch", minutes: 9, title: "Y Combinator: how to interview users",
+            source: "Gustaf Alströmer, YC Startup School",
+            url: "https://www.youtube.com/watch?v=z1iF1c8w5Lg&t=358s",
+            range: "05:58 → 14:37",
+            html: `
+<p>The link starts at <strong>05:58</strong>, the chapter “How to interview potential customers”. Keep going through “Follow ups &amp; Don't ask these questions” and stop at <strong>14:37</strong>, when the chapter on prototype sessions begins. The chapter times come from the video's own description.</p>
+<p>The talk is aimed at founders, but every rule applies to you. Listen for:</p>
+<ul>
+  <li>The questions he says to open with, and why.</li>
+  <li>The questions he says never to ask. Write down any you've asked before.</li>
+  <li>How he suggests following up after the call.</li>
+</ul>`,
+            notesPrompt: "The one question from the video you'll steal for Maro, and the one you'll stop asking"
+          },
+          {
+            kind: "watch", minutes: 5, title: "Teresa Torres: run an interview with one question",
+            source: "Lenny's Podcast",
+            url: "https://www.youtube.com/watch?v=9RFaz9ZBXpk&t=2132s",
+            range: "35:32 → 40:25",
+            altUrl: "https://www.lennysnewsletter.com/p/teresa-torres-on-how-to-interview",
+            altLabel: "Episode page (audio and show notes)",
+            html: `
+<p>The link starts at <strong>35:32</strong>, where Lenny asks for her best interviewing tips. Stop at <strong>40:25</strong>, when he asks how discovery changes as a company grows. I checked these times against the episode transcript. The video's chapter list rounds them about 40 seconds later.</p>
+<p>The best part is a live role-play: she interviews Lenny about the last time he watched something on a streaming service, using almost nothing but “What happened next?” Notice how much she learns from one ordinary evening. Then listen for her point about why people's answers about what they <em>would</em> do can't be trusted.</p>`,
+            notesPrompt: "Rewrite your first counselor question as “Tell me about the last time…”"
+          },
+          {
+            kind: "case", minutes: 4, title: "Case study: fix these questions, then build the tree",
+            html: `
+<p>Here are questions a new PM at a screening company might write. Each one breaks a rule. Read the fix, then notice which rule it repairs.</p>
+<div class="fixes">
+  <div class="fix">
+    <p class="fix-bad"><span>Before</span>Would you like a way to send automatic reminders to parents?</p>
+    <p class="fix-good"><span>After</span>Walk me through what happened the last time a family didn't return consent before screening day.</p>
+    <p class="fix-why">Pitch and future → a real past event. You'll hear whether reminders matter, or whether the real problem is wrong phone numbers.</p>
+  </div>
+  <div class="fix">
+    <p class="fix-bad"><span>Before</span>How easy was onboarding with Maro?</p>
+    <p class="fix-good"><span>After</span>Think back to the week you set Maro up. What was the first thing you did? Where did you get stuck? Who did you ask?</p>
+    <p class="fix-why">Opinion → story. “Who did you ask?” also tells you which support contacts were never logged.</p>
+  </div>
+  <div class="fix">
+    <p class="fix-bad"><span>Before</span>Parents trust Maro's links, right?</p>
+    <p class="fix-good"><span>After</span>(To a parent) When you got the text from school about the screening, what did you do first?</p>
+    <p class="fix-why">Leading question → open behavior. Maybe they asked a friend, searched the school's name, or ignored it. That's your Secure Links design brief.</p>
+  </div>
+</div>
+
+<div class="maro-lens">
+  <p class="lens-label">A first opportunity solution tree for Maro</p>
+  <ul class="tree">
+    <li><strong>Outcome:</strong> a new school screens its first student within 7 days of kickoff
+      <ul>
+        <li><strong>Opportunity:</strong> “I don't know what to do first after the kickoff call.”
+          <ul><li>Solution: a setup checklist on the dashboard home <span class="muted">→ test: show it to 3 new schools</span></li></ul>
+        </li>
+        <li><strong>Opportunity:</strong> “Parents think the text might be a scam.”
+          <ul><li>Solution: the school's name and counselor's name in the first line of the text <span class="muted">→ test: compare consent rates</span></li></ul>
+        </li>
+        <li><strong>Opportunity:</strong> “Our roster file never uploads on the first try.”
+          <ul><li>Solution: accept the file as-is and fix columns on screen <span class="muted">→ test: count upload tickets</span></li></ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p>Every opportunity here is a quote you'd expect to hear in an interview. Your job this week is to find out which ones are real, and which ones you're missing.</p>
+</div>`,
+            prompt: "Write down one question you've already asked a Maro customer that breaks a Mom Test rule, then rewrite it."
+          },
+          {
+            kind: "quiz", minutes: 3, title: "Check yourself",
+            questions: [
+              {
+                q: "Which question passes the Mom Test?",
+                options: [
+                  "Would you pay more for automatic reminders?",
+                  "Do you think parents find the consent flow confusing?",
+                  "Tell me about the last time you sent consent links. What happened?",
+                  "Wouldn't it be great if setup took one day?"
+                ],
+                answer: 2,
+                why: "It asks about a specific event that already happened. The others ask for an opinion, a prediction, or agreement with your idea."
+              },
+              {
+                q: "A counselor says, “Oh, I'd definitely use that!” about your idea. What have you learned?",
+                options: [
+                  "The feature is validated",
+                  "Very little. It's a polite prediction about the future",
+                  "They will pay for it",
+                  "You should build it this sprint"
+                ],
+                answer: 1,
+                why: "Compliments and “I would” answers feel like evidence but aren't. Steer back to what they did last time."
+              },
+              {
+                q: "In Teresa Torres's role-play, which question does most of the work?",
+                options: ["Why?", "What would you change?", "What happened next?", "How satisfied were you?"],
+                answer: 2,
+                why: "“What happened next?” keeps the person inside a real story and surfaces friction you'd never think to ask about."
+              },
+              {
+                q: "What's the most reliable way to set up weekly interviews with parents?",
+                options: [
+                  "Email every parent in the district",
+                  "Ask for a short call right after they finish the consent flow, or through their counselor",
+                  "Post on social media",
+                  "Wait until you have a new feature to show"
+                ],
+                answer: 1,
+                why: "Torres's advice is to ask people while you already have their attention, and to let the people already talking to customers recruit for you."
+              },
+              {
+                q: "During a counselor interview, which of these should you avoid?",
+                options: [
+                  "Asking them to share their screen and show you the last setup step",
+                  "Asking about a specific student's screening results",
+                  "Asking who they asked for help when they got stuck",
+                  "Asking what they used before Maro"
+                ],
+                answer: 1,
+                why: "Never pull student data into a product interview. You're studying the process, and the other three questions are great ways to do that."
+              },
+              {
+                q: "On an opportunity solution tree, what goes directly under the outcome?",
+                options: ["Solutions", "Experiments", "Opportunities: needs and pain points you heard from users", "Features on the roadmap"],
+                answer: 2,
+                why: "Opportunities come first. Starting from solutions is how teams end up building features nobody needed."
+              }
+            ]
+          },
+          {
+            kind: "write", minutes: 7, title: "Assignment: two interview guides and a plan",
+            html: `<p>Keep each guide short: an opener, one “last time” story prompt, and three or four follow-ups. You'll use these this week.</p>`,
+            fields: [
+              { id: "guide-counselor", label: "Counselor interview guide (20 minutes)", hint: "Opener, then “Tell me about the last time you…”, then follow-ups like “What happened next?” and “Who did you ask?”", rows: 6 },
+              { id: "guide-parent", label: "Parent interview guide (10 minutes, phone friendly)", hint: "Start from the moment the text from school arrived. Plan for Spanish.", rows: 5 },
+              { id: "recruit", label: "Five people you'll talk to this week, and how you'll reach each one", hint: "Mix new and long-time schools. Include at least one school that needed a lot of hand-holding.", rows: 5 },
+              { id: "trigger", label: "This week's recruiting trigger for whoever runs onboarding or support", hint: "Example: “If a counselor's roster upload fails, ask if they'll do a 20-minute call with me.”", rows: 2 },
+              { id: "belief", label: "The belief from Day 2 you most want to prove wrong", hint: "Pick your riskiest job story or anxiety guess.", rows: 2 }
+            ]
+          },
+          {
+            kind: "bonus", minutes: 0, title: "Go further (optional)",
+            links: [
+              { label: "The Mom Test", by: "Rob Fitzpatrick", url: "https://www.momtestbook.com/", meta: "Book, about 2 hours. Short and practical. The best single book on customer conversations." },
+              { label: "How To Talk To Users (full talk)", by: "Gustaf Alströmer, Y Combinator", url: "https://www.youtube.com/watch?v=z1iF1c8w5Lg", meta: "Watch the rest, especially “MVP prototype session interviews” at 14:37." },
+              { label: "Teresa Torres on Lenny's Podcast (full episode)", by: "Lenny's Podcast", url: "https://www.youtube.com/watch?v=9RFaz9ZBXpk", meta: "Listen. 26:49 covers automating weekly customer conversations." },
+              { label: "Opportunity Solution Trees", by: "Teresa Torres, Product Talk", url: "https://www.producttalk.org/opportunity-solution-tree/", meta: "Read, 10 min. The full method with examples." }
+            ]
+          }
+        ]
+      }
     },
     {
       id: "day4", n: 4, week: 1,
       title: "Your support inbox is a product spec",
       tagline: "Every ticket is a screen that failed to explain itself.",
-      mentors: ["vohra", "graham"],
+      mentors: ["vohra", "graham", "bier"],
       goals: ["Tag tickets by root cause, not by symptom", "Find the 20% of causes behind 80% of contacts", "Decide what hand-holding to keep on purpose"],
       outline: ["Read: a ticket taxonomy for Maro", "Watch: Superhuman's manual onboarding, and why it scaled", "Case: do things that don't scale, then automate them", "Quiz", "Write: tag 50 real tickets and rank the root causes"],
       resources: [
@@ -557,7 +756,213 @@ window.CURRICULUM = {
         { label: "Do Things that Don't Scale", by: "Paul Graham", url: "https://paulgraham.com/ds.html" },
         { label: "Onboarding teardowns", by: "UserOnboard", url: "https://www.useronboard.com/user-onboarding-teardowns/" }
       ],
-      assignment: "Ticket audit: 50 tickets tagged by root cause, top five causes ranked by volume"
+      assignment: "Ticket audit: 50 tickets tagged by root cause, top five causes ranked by volume",
+      lesson: {
+        bierRule: "“One of the reasons I actually recommend people put live chat in their app is it's the best vehicle for getting feedback and doing user research because users will literally tell you the problem they're having.”",
+        bierSource: "Nikita Bier on Lenny's Podcast, 32:34",
+        bierLink: "https://www.youtube.com/watch?v=bhnfZhJWCWY&t=1938s",
+        segments: [
+          {
+            kind: "brief", minutes: 1, title: "Today's mission",
+            html: `
+<p>Your brief says to reduce support requests and onboarding hand-holding. Today you learn to read the support inbox as the most honest product research you have. People only write in when the product failed them, so every ticket points at a specific screen, sentence or missing step.</p>
+<p>You'll practice on six example tickets, then start tagging Maro's real ones. Plan to finish the full audit over the week. Today, tag 20.</p>`
+          },
+          {
+            kind: "read", minutes: 7, title: "Reading the inbox like a PM",
+            html: `
+<h3>Tickets are symptoms. Tag the cause.</h3>
+<p>Support teams usually tag by topic: “consent”, “roster”, “login”. That tells you where the pain is, not why. A PM tags by <strong>root cause</strong>, because the cause tells you what to fix. Two tickets both tagged “consent” might be a parent who doesn't trust the link and a counselor who can't find the consent report. Those need completely different fixes.</p>
+
+<h3>Eight root causes for Maro</h3>
+<div class="causes">
+  <div><strong>Can't find it</strong><span>The feature exists, but the user didn't see it.</span></div>
+  <div><strong>Doesn't understand it</strong><span>They found it, but the words or the concept confused them.</span></div>
+  <div><strong>Doesn't trust it</strong><span>Worry about privacy, scams, who sees results. Day 2's “anxiety” force.</span></div>
+  <div><strong>Data and setup</strong><span>Roster files, imports, school and class structure.</span></div>
+  <div><strong>Access</strong><span>Logins, passwords, expired or forwarded links, wrong email or phone.</span></div>
+  <div><strong>Bug</strong><span>The product did something it shouldn't.</span></div>
+  <div><strong>Missing capability</strong><span>The product can't do the job yet.</span></div>
+  <div><strong>Practice or policy question</strong><span>“What should I do with this result?” A question about their work, not the software.</span></div>
+</div>
+<p>Also note <strong>who</strong> wrote in (Day 2's cast) and <strong>when</strong>: during setup, around the first screening, or in steady use. Setup tickets are your onboarding problem in its purest form.</p>
+
+<h3>Count the cost, not just the volume</h3>
+<p>A ticket type's cost is roughly <em>how often it happens × how long it takes to resolve</em>. Forty two-minute password resets cost less than ten 30-minute roster calls, and the roster calls also delay the school's first screening. Sort by cost, then look at the top three. Usually a few causes account for most of the work.</p>
+
+<h3>Calls and emails count too</h3>
+<p>Hand-holding during onboarding is support that nobody logs. Every question asked on a kickoff call is a ticket the product didn't prevent. Start writing them down with the same tags.</p>
+
+<h3>The fix ladder</h3>
+<p>For each top cause, start at the top rung and only step down if you have to:</p>
+<ol class="numbers">
+  <li><strong>Remove the cause.</strong> Change the product so the problem can't happen. Accept the roster file as-is instead of rejecting it.</li>
+  <li><strong>Explain it in the moment.</strong> Better copy, an inline hint, an error message that says how to fix it.</li>
+  <li><strong>Self-serve help.</strong> A help article, linked from the exact screen where people get stuck.</li>
+  <li><strong>A human, on purpose.</strong> Some moments deserve a person. Choose them; don't default to them.</li>
+</ol>
+
+<h3>Don't kill hand-holding yet. Learn from it.</h3>
+<p>Paul Graham's essay <em>Do Things That Don't Scale</em> argues that early on you should do things by hand that you'll automate later. Superhuman took this further than anyone: for years every new user had a one-on-one onboarding session. Rahul Vohra says it produced superfans and let engineers skip building self-serve onboarding while they were still finding product-market fit. Later they built self-serve, and he describes the switch as “terrifying”.</p>
+<p>Maro's onboarding calls are the same kind of asset. Each call shows you exactly what the product fails to explain. Your job is to write down every question, turn the most common ones into product changes, and keep a human only where a human adds something software can't.</p>`
+          },
+          {
+            kind: "watch", minutes: 5, title: "Rahul Vohra: the power of manual onboarding",
+            source: "Lenny's Podcast, Mar 2025",
+            url: "https://www.youtube.com/watch?v=0igjSRZyX-w&t=2852s",
+            range: "47:32 → 52:37",
+            altUrl: "https://www.lennysnewsletter.com/p/superhumans-secret-to-success-rahul-vohra",
+            altLabel: "Episode page and transcript",
+            html: `
+<p>The link starts at <strong>47:32</strong>, the chapter “The power of manual onboarding”. Stop at <strong>52:37</strong>, when Lenny moves on to product-market fit. I checked both times against the transcript.</p>
+<p>Listen for:</p>
+<ul>
+  <li>How many people Superhuman had doing onboarding at its peak.</li>
+  <li>The two reasons he gives for doing it at all.</li>
+  <li>Why they eventually had to build self-serve, and how it felt.</li>
+</ul>
+<p>Then ask: Maro sells to districts for a lot more than a Superhuman subscription. Which parts of your onboarding deserve a human, and which are a human doing a computer's job?</p>`,
+            notesPrompt: "Which of Maro's onboarding steps should stay human, and which should become product?"
+          },
+          {
+            kind: "watch", minutes: 2, title: "Nikita Bier: put live chat in your app",
+            source: "Lenny's Podcast, Aug 2024",
+            url: "https://www.youtube.com/watch?v=bhnfZhJWCWY&t=1938s",
+            range: "32:18 → 34:08",
+            html: `
+<p>A two-minute chapter, “Leveraging live chat”. Nikita explains why he puts 24-hour live chat support inside his apps even though “the whole point of tech is you don't need to do that”: users get treated well, and they “will literally tell you the problem they're having.” His support lead pasted interesting feedback into Slack, and the team turned some of it into features.</p>
+<p>The lesson for you: support isn't a cost center to shrink. It's a research channel to wire straight into product decisions.</p>`
+          },
+          {
+            kind: "read", minutes: 4, title: "Paul Graham: Do Things That Don't Scale",
+            html: `
+<p>Read four short sections of the essay: <strong>Recruit</strong>, <strong>Delight</strong>, <strong>Experience</strong> and <strong>Manual</strong>. Skip the rest for now.</p>
+<p><a href="https://paulgraham.com/ds.html" target="_blank" rel="noopener">Open the essay →</a></p>
+<p>Two lines to look for. The first is about Stripe's founders, who would say “Right then, give me your laptop” and set people up on the spot; YC calls it the “Collison installation”. The second: “It's not the product that should be insanely great, but the experience of being your user.”</p>
+<div class="maro-lens">
+  <p class="lens-label">Maro translation</p>
+  <p>Maro already does the Collison installation; that's your onboarding calls. The question is whether you're <em>learning</em> from them. A good onboarding call ends with a list of things the product should have done on its own.</p>
+</div>`
+          },
+          {
+            kind: "quiz", minutes: 4, title: "Practice: tag these tickets",
+            intro: "These six tickets are made-up examples, written to look like what a screening platform gets. Pick the root cause for each.",
+            questions: [
+              {
+                q: "Parent: “The link says it expired. Do I have to call the school now?”",
+                options: ["Bug", "Access", "Missing capability", "Doesn't trust it"],
+                answer: 1,
+                why: "The link expiring is working as designed, so it's an access problem. The top-rung fix: let the parent request a fresh link from the expired page, with no call needed."
+              },
+              {
+                q: "Counselor: “Where can I see which parents haven't consented yet?” (The report exists on another tab.)",
+                options: ["Can't find it", "Missing capability", "Doesn't understand it", "Data and setup"],
+                answer: 0,
+                why: "The feature exists but they didn't see it. Fix it in the product: show consent status where counselors already look, before writing an article about the other tab."
+              },
+              {
+                q: "Parent: “Why does the school need my child's date of birth? Who will see this?”",
+                options: ["Doesn't understand it", "Bug", "Doesn't trust it", "Practice or policy question"],
+                answer: 2,
+                why: "This is anxiety. One plain sentence on that screen about why it's needed and who sees it can prevent the ticket for every parent."
+              },
+              {
+                q: "District admin: “Our roster upload failed. It says 'column mismatch'.”",
+                options: ["Access", "Data and setup", "Bug", "Can't find it"],
+                answer: 1,
+                why: "It's a setup problem, and the error message makes it worse by not saying how to fix it. These tickets cost a lot because they delay the whole school's first screening."
+              },
+              {
+                q: "Counselor: “A student's answers were flagged high-risk. What am I supposed to do now?”",
+                options: ["Bug", "Doesn't understand it", "Missing capability", "Practice or policy question"],
+                answer: 3,
+                why: "It's a question about their clinical and safety process, and it must reach a person right away, every time. The product can still help: show the district's own response protocol and on-call contact right next to the flagged result."
+              },
+              {
+                q: "Teacher: “Students get a blank screen on Chromebooks when they start the screener.”",
+                options: ["Access", "Bug", "Data and setup", "Doesn't understand it"],
+                answer: 1,
+                why: "The product isn't doing what it should. Bugs go to engineering with steps to reproduce, and this one blocks a whole class at once, so it's urgent."
+              }
+            ]
+          },
+          {
+            kind: "quiz", minutes: 3, title: "Check yourself",
+            questions: [
+              {
+                q: "Why tag tickets by root cause instead of by topic?",
+                options: [
+                  "It's faster for support agents",
+                  "The cause tells you what kind of fix is needed; the topic only tells you where it hurts",
+                  "Help desk tools require it",
+                  "It makes the ticket count look smaller"
+                ],
+                answer: 1,
+                why: "“Consent” tickets could be trust, findability or access problems, and each needs a different fix."
+              },
+              {
+                q: "Which should you fix first?",
+                options: [
+                  "40 password resets a month, about 2 minutes each",
+                  "10 roster upload problems a month, about 30 minutes each, each delaying a school's first screening"
+                ],
+                answer: 1,
+                why: "Eighty minutes versus three hundred, and the roster problems also slow time to first screening, one of your two numbers."
+              },
+              {
+                q: "What's the top rung of the fix ladder?",
+                options: ["Write a help article", "Add a tooltip", "Change the product so the problem can't happen", "Train the support team"],
+                answer: 2,
+                why: "Removing the cause beats explaining it. Help articles are for problems you can't design away yet."
+              },
+              {
+                q: "According to Rahul Vohra, what did manual onboarding let Superhuman's engineers skip?",
+                options: [
+                  "Writing tests",
+                  "Building first-time user experience and activation flows, so they could focus on product-market fit",
+                  "Talking to customers",
+                  "Fixing bugs"
+                ],
+                answer: 1,
+                why: "Humans did the activation work, so engineers could spend their time on the product itself. He also says you have to know when to stop."
+              },
+              {
+                q: "Why does Nikita Bier put live chat support inside his apps?",
+                options: [
+                  "To cut support costs",
+                  "Users tell you exactly what problem they're having, so it doubles as user research",
+                  "App store rules require it",
+                  "To upsell paid plans"
+                ],
+                answer: 1,
+                why: "He calls it “the best vehicle for getting feedback and doing user research.” Support is a research channel."
+              }
+            ]
+          },
+          {
+            kind: "write", minutes: 8, title: "Assignment: start the ticket audit",
+            html: `<p>Pull recent support contacts from wherever they live: the help desk, the support inbox, call notes, onboarding call notes. Tag 20 today using the eight causes, plus who and when. Finish 50 by the end of the week. A simple spreadsheet works: ticket, cause, who, when, minutes to resolve.</p>`,
+            fields: [
+              { id: "sources", label: "Where do support contacts live today? List every place.", hint: "Help desk, shared inbox, phone, texts to the onboarding lead, onboarding call notes…", rows: 3 },
+              { id: "counts", label: "Your tag counts so far (cause: number of tickets)", hint: "Example: Access: 7, Data and setup: 5, Can't find it: 4…", rows: 5 },
+              { id: "top3", label: "Top three causes by cost (count × time), with one real example each", hint: "Quote the customer's words.", rows: 5 },
+              { id: "who-when", label: "Who writes in most, and at what stage?", hint: "Compare with your Day 2 guess about which anxiety causes the most contacts. Were you right?", rows: 3 },
+              { id: "kill-first", label: "The one ticket type you'll eliminate first, and which rung of the fix ladder you'll use", hint: "Be specific: which screen, what change.", rows: 3 },
+              { id: "keep-human", label: "The hand-holding you'll keep on purpose, and why", hint: "Where does a human add something software can't?", rows: 2 },
+              { id: "call-log", label: "From this week on, what will you capture from every onboarding call?", hint: "Example: each question asked, the screen it came from, and the cause tag.", rows: 2 }
+            ]
+          },
+          {
+            kind: "bonus", minutes: 0, title: "Go further (optional)",
+            links: [
+              { label: "Do Things That Don't Scale (whole essay)", by: "Paul Graham", url: "https://paulgraham.com/ds.html", meta: "Read, 20 min. The “Consult” section is also relevant to a company selling to districts." },
+              { label: "Superhuman's secret to success (full episode)", by: "Rahul Vohra on Lenny's Podcast", url: "https://www.youtube.com/watch?v=0igjSRZyX-w", meta: "Watch. 52:37 is his take on product-market fit, which you'll use on Day 12." },
+              { label: "How Superhuman built an engine to find product-market fit", by: "Rahul Vohra, First Round Review", url: "https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/", meta: "Read, 15 min." },
+              { label: "Onboarding teardowns", by: "UserOnboard", url: "https://www.useronboard.com/user-onboarding-teardowns/", meta: "Browse. Good prep for Day 7." }
+            ]
+          }
+        ]
+      }
     },
     {
       id: "day5", n: 5, week: 1,

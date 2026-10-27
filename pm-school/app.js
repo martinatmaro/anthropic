@@ -198,20 +198,35 @@
       '<span class="saved" data-saved-for="' + id + '"></span></div>';
   }
 
+  // Fixed per-question shuffle so the right answer isn't always in the same spot.
+  // Answers are stored by original option index, so the order can change safely.
+  function optionOrder(n, seed) {
+    var h = 2166136261;
+    for (var i = 0; i < seed.length; i++) { h ^= seed.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+    var order = [];
+    for (var k = 0; k < n; k++) order.push(k);
+    for (var j = n - 1; j > 0; j--) {
+      h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0;
+      var r = h % (j + 1), t = order[j]; order[j] = order[r]; order[r] = t;
+    }
+    return order;
+  }
+
   function quizHtml(day, seg, si) {
     var ans = (state.quiz[day.id] || {})[si] || {};
-    var h = '<div class="quiz">';
+    var h = '<div class="quiz">' + (seg.intro ? '<p class="muted">' + esc(seg.intro) + "</p>" : "");
     seg.questions.forEach(function (q, qi) {
       var picked = ans[qi];
       h += '<div class="q" role="group" aria-labelledby="q-' + si + "-" + qi + '"><p class="q-text" id="q-' + si + "-" + qi + '">' + (qi + 1) + ". " + esc(q.q) + '</p><div class="opts">';
-      q.options.forEach(function (o, oi) {
+      optionOrder(q.options.length, day.id + ":" + si + ":" + qi).forEach(function (oi, pos) {
+        var o = q.options[oi];
         var cls = "opt";
         if (picked != null) {
           if (oi === q.answer) cls += " right";
           else if (oi === picked) cls += " wrong";
         }
         h += '<button type="button" class="' + cls + '" data-quiz="' + si + '" data-q="' + qi + '" data-o="' + oi + '"' + (picked != null ? " disabled" : "") + ">" +
-          '<span class="key">' + "ABCD"[oi] + "</span><span>" + esc(o) + "</span></button>";
+          '<span class="key">' + "ABCDEF"[pos] + "</span><span>" + esc(o) + "</span></button>";
       });
       h += "</div>";
       if (picked != null) {
