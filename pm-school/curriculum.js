@@ -292,7 +292,7 @@ window.CURRICULUM = {
       outline: ["Read: Jobs to Be Done in 7 minutes", "Watch: Christensen's milkshake story", "Case: the Maro cast (district admin, counselor, teacher, parent, student, clinician)", "Quiz", "Write: job map for every Maro user"],
       resources: [
         { label: "Know Your Customers' Jobs to Be Done", by: "Clayton Christensen et al., HBR", url: "https://hbr.org/2016/09/know-your-customers-jobs-to-be-done" },
-        { label: "The milkshake story (starts 1:07)", by: "Clayton Christensen, Startup Grind", url: "https://www.youtube.com/watch?v=Zn6-KksdOgE&t=67s" },
+        { label: "Why hire a milkshake?", by: "Clayton Christensen, Moral of the Story", url: "https://www.youtube.com/watch?v=6zfAurEA21Y" },
         { label: "Intercom on Jobs to Be Done (free book)", by: "Intercom", url: "https://www.intercom.com/resources/books/intercom-jobs-to-be-done" }
       ],
       assignment: "Job map: one job statement per Maro user type, plus their biggest anxiety",
@@ -350,28 +350,32 @@ window.CURRICULUM = {
 <p>When someone asks for a feature, they are proposing their own fix for a job. Your work is to find the job and then choose the best fix, which may be smaller, different, or already there but hidden.</p>`
           },
           {
-            kind: "watch", minutes: 4, title: "Clayton Christensen: the milkshake story",
-            source: "Startup Grind",
-            url: "https://www.youtube.com/watch?v=Zn6-KksdOgE&t=67s",
-            range: "1:07 → about 5:00",
+            kind: "watch", minutes: 9, title: "Clayton Christensen: why hire a milkshake?",
+            source: "Moral of the Story, YouTube, 8:27",
+            url: "https://www.youtube.com/watch?v=6zfAurEA21Y",
+            range: "Whole video, from 0:00",
+            altUrl: "https://therewiredgroup.com/case-studies/milkshakes/",
+            altLabel: "Bob Moesta's firm's 3-minute write-up of the original milkshake research",
             html: `
-<p>The most famous four minutes in product thinking. A fast food chain tries to sell more milkshakes by asking customers how to improve them. Sales don't move. Then a researcher asks a different question: what job is the milkshake being hired to do?</p>
+<p>This whole video is the milkshake story, told by Christensen as it appears in his book <em>How Will You Measure Your Life?</em> Start at the beginning and watch to the end. A fast food chain tries to sell more milkshakes by asking customers how to improve them, and sales don't move. Then a researcher asks a different question: what job is the milkshake being hired to do?</p>
 <p>Listen for:</p>
 <ul>
   <li>When are most milkshakes bought, and by whom?</li>
-  <li>What is the milkshake really competing against?</li>
-  <li>Why does the same customer hire it for a different job in the afternoon?</li>
+  <li>What is the milkshake really competing against in the morning?</li>
+  <li>Why does a parent hire the same milkshake for a different job in the afternoon, and what does it compete with then?</li>
 </ul>`,
-            notesPrompt: "What's Maro's “morning commute”? Name one situation where a school hires Maro for a job you hadn't thought about."
+            notesPrompt: "What's Maro's \u201cmorning commute\u201d? Name one situation where a school hires Maro for a job you hadn't thought about."
           },
           {
-            kind: "watch", minutes: 6, title: "Bob Moesta: struggling moments create demand",
+            kind: "watch", minutes: 3, title: "Bob Moesta: struggling moments create demand",
             source: "Lenny's Podcast, Aug 2023",
-            url: "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-jtbd-bob-moesta",
-            range: "04:04 → 09:51",
+            url: "https://www.youtube.com/watch?v=xQV7HVyAJjc&t=449s",
+            range: "07:29 \u2192 09:51",
+            altUrl: "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-jtbd-bob-moesta",
+            altLabel: "Episode page (audio, chapters and transcript)",
             html: `
-<p>Open the episode page and play from <strong>04:04</strong> (“A simple explanation of the Jobs To Be Done framework”) through <strong>09:51</strong>, which covers “Struggling moments and demand”.</p>
-<p>Moesta's key claim is that demand doesn't come from your product. It comes from a moment when someone is struggling. Listen for how he describes that moment, then think about where Maro's users struggle: the week before screening, the first login, the text message a parent didn't expect.</p>
+<p>The link starts at <strong>07:29</strong>, the chapter called \u201cStruggling moments and demand\u201d. Stop at <strong>09:51</strong>, when the next chapter (\u201cUnderstanding the context behind pain points\u201d) begins. If you have a few extra minutes, back up to 04:04 for Moesta's own short explanation of Jobs to Be Done.</p>
+<p>Moesta, who ran the milkshake interviews with Christensen, argues that demand doesn't come from your product. It comes from a moment when someone is struggling. Listen for how he describes that moment, then think about where Maro's users struggle: the week before screening, the first login, the text message a parent didn't expect.</p>
 <p class="muted">Bookmark 14:46 for later. It's how Autobooks improved its buying process and 4x'ed conversion, which you'll want on Day 9.</p>`,
             notesPrompt: "One struggling moment you've seen a Maro user in, described as specifically as you can."
           },
@@ -516,6 +520,7 @@ window.CURRICULUM = {
             kind: "bonus", minutes: 0, title: "Go further (optional)",
             links: [
               { label: "Know Your Customers' Jobs to Be Done", by: "Clayton Christensen et al., Harvard Business Review", url: "https://hbr.org/2016/09/know-your-customers-jobs-to-be-done", meta: "Read, 15 min. The original argument, with the milkshake and more cases." },
+              { label: "Milkshakes in the Morning", by: "The Re-Wired Group (Bob Moesta's firm)", url: "https://therewiredgroup.com/case-studies/milkshakes/", meta: "Read, 3 min. The original research, from the people who did the interviews." },
               { label: "The ultimate guide to JTBD (full episode)", by: "Bob Moesta on Lenny's Podcast", url: "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-jtbd-bob-moesta", meta: "Listen, 1 hr. 30:07 is on why he doesn't use a discussion guide, useful before Day 3." },
               { label: "How we accidentally invented job stories", by: "Paul Adams, Intercom", url: "https://www.intercom.com/blog/accidentally-invented-job-stories/", meta: "Read, 6 min. Where the format came from." },
               { label: "Intercom on Jobs to Be Done", by: "Intercom (free book)", url: "https://www.intercom.com/resources/books/intercom-jobs-to-be-done", meta: "Read in parts. How a software team uses JTBD day to day." },
